@@ -30,6 +30,10 @@ common_CFLAGS := \
 	-DHAVE_VISIBILITY=1 \
 	-DHAVE_LIBDRM_ATOMIC_PRIMITIVES=1
 
+LOCAL_CFLAGS += \
+	-Wno-unused-parameter \
+	-Wno-missing-field-initializers
+
 # Static library for the device (recovery)
 include $(CLEAR_VARS)
 
